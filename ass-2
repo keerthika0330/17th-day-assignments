@@ -1,0 +1,27 @@
+#include<stdio.h>  
+
+int main()  
+{  
+    int limit, num, sbig = 0;  
+
+    printf("Enter the limit\n");  
+    scanf("%d", &limit);  
+
+    printf("Enter %d positive numbers\n", limit);  
+
+
+    while(limit > 0)  
+    {  
+        scanf("%d", &num);  
+
+
+        if(num > sbig )
+        {  
+            sbig = num;  
+        }  
+
+        limit--;  
+    }  
+    printf("Second Big is %d\n", sbig);  
+
+    return 0;  
